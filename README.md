@@ -34,123 +34,74 @@ A stateful AI agent built on the Letta platform using Llama 3.1, featuring dynam
 ```
 llm-mem-toolkit/
 ├── LICENSE
-├── Letta_system_persona     # System instructions and persona
-├── agentdetails.py         # Agent configuration
-├── chat_agent.py           # Core chat functionality
+├── Letta_system_persona    # System instructions and persona which was used
+├── agentdetails.py         # Displays agents details
+├── chat_agent.py           # sending user message to Chat bot
 ├── distance.py             # Distance calculation tool
-├── get_agent_messages.py   # Message handling
-├── location.py             # Location services
-├── new_letta_listagents.py # Agent management
+├── get_agent_messages.py   # Displays chat history based on the agent id
+├── location.py             # gets the location of the user
+├── new_letta_listagents.py # Lists all the Agents in Letta Local server
 └── weather_tool.py         # Weather information
 ```
 
+# Installation and Configuration Guide
+
 ## 🚀 Installation
 
-1. Clone the repository
+1. Install Letta:
 ```bash
-git clone https://github.com/Sethuram2003/llm-mem-toolkit.git
-cd llm-mem-toolkit
+pip install letta
 ```
 
-2. Install Ollama and Llama 3.1
+2. Start the Letta server:
 ```bash
-# Install Ollama (instructions vary by OS)
-ollama pull llama2:3.1
+letta server
 ```
 
-3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
+3. Open Letta interface:
+   - Navigate to http://localhost:8283 in Google Chrome
 
 ## ⚙️ Configuration
 
-1. Start the Letta server
-2. Configure system persona:
-   - Edit `Letta_system_persona` for custom behavior
-   - Adjust memory parameters as needed
+### 1. Set up Letta and ADE
+- Use the Letta interface to create and customize agents
+- Start the server and navigate to ADE for agent development
 
-3. Set up custom tools:
-   - Configure API keys if required
-   - Modify tool parameters in respective files
+### 2. System Persona
+- Edit `Letta_system_persona` to configure the default behavior
+- Adjust memory parameters as needed
 
-## 📖 Usage
+### 3. Custom Tools
+- Configure API keys for tools in the respective files
+- Modify parameters as needed for custom requirements
 
-1. Initialize the agent:
-```python
-from chat_agent import ChatAgent
+### 4. Agent Interaction and Management
 
-agent = ChatAgent()
-agent.initialize()
-```
+The following Python scripts are available for agent management:
 
-2. Start conversation:
-```python
-response = agent.chat("Hello! Can you help me with the weather?")
+- **agentdetails.py**
+  - Displays details of the agents
+  - Usage: `python agentdetails.py`
+
+- **chat_agent.py**
+  - Sends user messages to the chatbot
+  - Usage: `python chat_agent.py`
+
+- **get_agent_messages.py**
+  - Fetches chat history based on agent ID
+  - Usage: `python get_agent_messages.py`
+
+- **new_letta_listagents.py**
+  - Lists all agents running on the Letta local server
+  - Usage: `python new_letta_listagents.py`
+
 ```
 
 ## 💬 Example Conversations
 
 Here are some example interactions with the agent:
 
-### Weather Query
-```
-User: What's the weather like in New York?
-Agent: Let me check that for you using my weather tool.
-[Accessing weather data...]
-The current temperature in New York is 72°F (22°C) with partly cloudy skies.
-Humidity is at 65% with a light breeze from the northeast.
 
-User: Should I bring an umbrella?
-Agent: Based on the forecast, there's a 30% chance of rain later today.
-I'd recommend bringing an umbrella just to be safe.
-```
-
-### Location Services
-```
-User: Find me cafes near Central Park
-Agent: Using my location services tool to search...
-[Accessing location data...]
-I found several cafes within 0.5 miles of Central Park:
-1. Park Café (0.1 miles) - ⭐4.5
-2. The Morning Cup (0.3 miles) - ⭐4.3
-3. Lakeside Coffee (0.4 miles) - ⭐4.7
-Would you like details about any of these?
-```
-
-### Memory Demonstration
-```
-User: Remember my favorite color is blue
-Agent: I've stored that information in my memory.
-[Memory updated: user_preferences.favorite_color = "blue"]
-
-User: What's my favorite color?
-Agent: Based on our previous conversation, your favorite color is blue.
-```
-
-## 🔧 Technical Details
-
-### Components
-
-- **chat_agent.py**
-  - Core conversation handling
-  - Memory management
-  - Tool integration
-
-- **Custom Tools**
-  - Weather: Real-time weather data
-  - Location: Geolocation services
-  - Distance: Geographic calculations
-
-### Memory System
-```python
-{
-    "user_preferences": {},
-    "conversation_history": [],
-    "learned_patterns": {},
-    "tool_states": {}
-}
-```
 
 ## 🤝 Contributing
 
