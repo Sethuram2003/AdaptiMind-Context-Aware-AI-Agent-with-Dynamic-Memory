@@ -2,7 +2,7 @@ import requests
 import json
 
 token = "<token>"
-agent_id="agent-c236957a-8686-452e-971b-f52c169bb449"
+agent_id="Your_agent_id"
 url = f"http://localhost:8283/v1/agents/{agent_id}/messages"
 print(url)
 headers = {
