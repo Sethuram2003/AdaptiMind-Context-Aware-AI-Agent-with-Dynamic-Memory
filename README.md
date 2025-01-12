@@ -4,11 +4,13 @@ A stateful AI agent built on the Letta platform using Llama 3.1, featuring dynam
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
-![Llama](https://img.shields.io/badge/Llama_3.1-A100FF?style=for-the-badge&logo=llama&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-FF4B4B?style=for-the-badge&logo=ollama&logoColor=white)
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)  
+![Llama](https://img.shields.io/badge/Llama_3.1-A100FF?style=for-the-badge&logo=llama&logoColor=white)  
+![Ollama](https://img.shields.io/badge/Ollama-FF4B4B?style=for-the-badge&logo=ollama&logoColor=white)  
+![Letta](https://img.shields.io/badge/Letta-00C853?style=for-the-badge&logo=letta&logoColor=white)  
 
 </div>
+
 
 ## 📚 Table of Contents
 - [Features](#features)
