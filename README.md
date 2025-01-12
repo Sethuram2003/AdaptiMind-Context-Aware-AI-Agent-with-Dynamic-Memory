@@ -100,7 +100,7 @@ The following Python scripts are available for agent management:
 
 Here are some example interactions with the agent:
 
-![Chat_1](Screenshot from 2025-01-07 02-42-34.png)
+![Chat_1](chat_1.png)
 
 
 
