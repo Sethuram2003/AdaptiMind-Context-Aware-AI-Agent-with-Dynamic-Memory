@@ -95,7 +95,6 @@ The following Python scripts are available for agent management:
   - Lists all agents running on the Letta local server
   - Usage: `python new_letta_listagents.py`
 
-```
 
 ## 💬 Example Conversations
 
