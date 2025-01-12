@@ -1,7 +1,7 @@
 import json
 import requests
 
-AGENT_ID = "agent-122c11da-8061-49ae-9edc-d121f6b18c5c"
+AGENT_ID = "Your_agent_id"
 url = f"http://localhost:8283/v1/agents/{AGENT_ID}/messages"
 
 token = "<token>"
