@@ -44,8 +44,6 @@ llm-mem-toolkit/
 └── weather_tool.py         # Weather information
 ```
 
-# Installation and Configuration Guide
-
 ## 🚀 Installation
 
 1. Install Letta:
