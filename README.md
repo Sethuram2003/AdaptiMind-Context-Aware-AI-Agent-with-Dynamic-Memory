@@ -101,6 +101,10 @@ The following Python scripts are available for agent management:
 Here are some example interactions with the agent:
 
 ![Chat_1](chat_1.png)
+*conversation between Emma Custom AI Agent*
+![Chat_2](chat_2.png)
+![Chat_3](chat_3.png)
+*conversation between Emma Custom AI Agent with tools*
 
 
 
