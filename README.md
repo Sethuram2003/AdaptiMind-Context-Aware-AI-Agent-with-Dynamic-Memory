@@ -1,4 +1,4 @@
-# 🤖 LLM Memory Toolkit
+# 🤖 AdaptiMind: Context-Aware AI Agent with Dynamic Memory
 
 A stateful AI agent built on the Letta platform using Llama 3.1, featuring dynamic memory management and custom tool integration for enhanced conversational experiences.
 
